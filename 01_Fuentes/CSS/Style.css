@@ -38,4 +38,16 @@ p:nth-of-type(4){
     font-family: BeonRegular;
     font-size: 2.5rem;
 }
-    
+.icono{
+  font-size: 6rem;
+  color: tomato;
+  position: relative;
+  left: 48%;  
+  top: 100px;
+  cursor: pointer;
+  text-shadow: 1px 2px 5px rgb(0, 0, 0);
+  border-radius: 50%;
+  background: aquamarine;
+  
+
+} 
