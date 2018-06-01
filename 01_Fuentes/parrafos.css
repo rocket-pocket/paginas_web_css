@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 20vh;
+    background: rgb(11, 88, 151);
+    color: #ffffff;
+    margin-top: auto;
+    
+    
+    
+}
+h1{
+    text-align: center;
+    border: 1px solid;
+    line-height: 8rem;
+    
+    margin-top: auto;
+    height: 20vh;
+    
+}
+p{
+    width: 50%; 
+    text-align: left;
+    margin-left:  auto ;/*se usan estos valore en vez de3 margin: 0 auto; pues usa 4                            valores al contrario de darle dos valores*/
+    margin-right: auto ;
+    margin-top: 200px;
+}
