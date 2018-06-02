@@ -1,0 +1,165 @@
+/*CABECERA*/
+
+header{
+    height: 100vh;
+    background-image: url("../assets/descarga.jpg");
+    
+    margin-top: 0;
+    background-color: rgb(37, 37, 37);
+    background-blend-mode: overlay;
+
+}
+h2, h3, h4, h5{
+    font-family: 'Anton';
+    font-weight: 100;
+}
+h3{
+    font-size: 2rem;
+}
+p, a{
+    font-family: 'Roboto';
+
+}
+p{
+    font-size: 1.5rem;
+}
+h3{
+    font-family: 'Raleway Dots';
+    font-size: 10rem;
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 45vh;
+    
+}
+
+.logo img{
+    width: 50px;
+    
+}
+.logo img:hover{
+    transform: scale(1.2);
+    transition: 0.2s linear;
+}
+.logo{
+    padding: 0.2rem;
+    position: absolute;
+    top: 0;
+    left: 8%;
+    z-index: 10; 
+    
+    
+
+}
+nav{
+    width: 100%;
+    height: 8.9vh;
+    background: rgb(12, 77, 121);
+    color: white;
+    position: absolute;
+    top: 0;
+
+   
+    
+}
+ul{
+    list-style: none;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    /*border: 1px solid;*/
+}
+li{
+    display: inline-block;
+    float: left; 
+    
+    margin-top: 0;
+    /*border: 1px solid;*/
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    /*border: 1px solid;*/
+    position: relative;
+    top: 0;
+    margin-top: 0;
+
+
+}
+nav ul li a:hover{
+    background: white;
+    color: rgb(12, 77, 121);
+    transition: 0.2s ease;
+}
+
+/*sECTION*/
+
+ section img{
+    width: 20rem; 
+    border-radius: 50%;
+    border: 1rem solid rgb(228, 228, 61); 
+    margin-top: -8rem;
+    margin-left: 38%;
+    position: relative;
+}
+section img::before{
+    content:"HOLA";
+    width: 50%;
+    height: 40%;
+    position: relative;
+    top: 10%;
+    left: 100%;
+    background: rgb(189, 37, 37);
+    border: 0.5rem solid black;
+    z-index: 10;
+}
+section img:hover{
+
+}
+h4{
+    font-size: 3rem;
+    margin-left: 4%;
+    
+}
+section p{
+    font-size: 1.5rem;    
+    padding: 1.5rem 3rem;
+    margin-top: -3rem;
+}
+section{
+    background: rgb(212, 212, 212);
+    height: 100vh;
+}
+span{
+    font-size: 2rem;
+}
+
+/*----*/
+
+/*ASIDE*/
+.rss{
+    bottom: 0;
+}
+
+/*----*/
+/*FOOTER*/
+footer{
+    margin-top: -1rem;
+    width: 100%;
+    height: 6rem;
+    background: black;
+    color: #ffffff;
+    text-align: center;
+}
+footer p{
+    font-size: 1rem;
+    line-height: 6;
+}
+/*-----*/
