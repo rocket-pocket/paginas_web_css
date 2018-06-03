@@ -21,6 +21,7 @@ p, a{
 }
 p{
     font-size: 1.5rem;
+    font-weight: 100;
 }
 h1{
     font-family: 'Raleway Dots';
@@ -101,11 +102,6 @@ nav ul li a:hover{
 /*-----------*/
 
 /*MAIN*/
-
-.ini{
-
-}
-
 h2{
     font-size: 4rem;
     text-transform: uppercase;
@@ -229,9 +225,6 @@ td{
     margin-right: auto;
     margin-left: auto;
     
-}
-.economi{
-
 }
 .economi p{
     width: 50%;

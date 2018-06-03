@@ -2,7 +2,8 @@
 
 header{
     height: 100vh;
-    background-image: url("../assets/descarga.jpg");
+    background-image: url("../assets/P1050614.JPG");
+    background-size: cover;
     
     margin-top: 0;
     background-color: rgb(37, 37, 37);
@@ -100,52 +101,72 @@ nav ul li a:hover{
 }
 
 /*sECTION*/
+.me{
+    margin-bottom: 15rem;
+}
 
  section img{
-    width: 20rem; 
+    width: 12rem; 
     border-radius: 50%;
-    border: 1rem solid rgb(228, 228, 61); 
-    margin-top: -8rem;
-    margin-left: 38%;
+    border: 0.5rem solid rgb(228, 228, 61); 
+    margin-top: 0rem;
+    margin-left: 10%;
     position: relative;
-}
-section img::before{
-    content:"HOLA";
-    width: 50%;
-    height: 40%;
-    position: relative;
-    top: 10%;
-    left: 100%;
-    background: rgb(189, 37, 37);
-    border: 0.5rem solid black;
-    z-index: 10;
-}
-section img:hover{
-
+    top: 6.5rem;
 }
 h4{
     font-size: 3rem;
-    margin-left: 4%;
-    
-}
-section p{
-    font-size: 1.5rem;    
-    padding: 1.5rem 3rem;
-    margin-top: -3rem;
+    text-align: center;    
 }
 section{
-    background: rgb(212, 212, 212);
     height: 100vh;
 }
 span{
     font-size: 2rem;
+}
+.marco{
+    width: 65%;
+    height: 30rem; 
+    background: rgb(216, 216, 216); 
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3rem;  
+}
+.marco p{
+    font-size: 1.5rem;
+    font-weight: 100;    
+    padding: 1.5rem 3rem;
+    margin-top: -3rem;
 }
 
 /*----*/
 
 /*ASIDE*/
 .rss{
-    bottom: 0;
+    top: 210%;
+    left: 38%;
+}
+.rss li{
+    padding: 3rem 1rem;
+}
+.fab{
+    font-size: 2rem;
+}
+.fab:hover{
+    transform: scale(1.3);
+    transition: 0.3s ease;
+}
+.fa-facebook{
+    color: rgb(36, 99, 180);
+}
+.fa-instagram{
+    color: rgb(126, 34, 84);
+}
+.fa-youtube{
+    color: red;
+}
+.fa-vimeo{
+    color: rgb(33, 107, 219);
 }
 
 /*----*/
