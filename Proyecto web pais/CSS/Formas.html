@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       .forma{
+           width: 5rem;
+           height: 5rem;
+          /* border: 1px solid black;*/
+           margin: 20rem;
+           transform: rotate(45deg);
+           position: relative;
+           background: red;
+       } 
+       .forma::before{
+           content:"";
+           width: 100%;
+           height: 100%;
+           position: absolute;
+           background: red;
+           border-radius: 50%;
+           bottom: 50%;
+           left: 0%;
+       }
+       .forma::after{
+        content:"";
+           width: 100%;
+           height: 100%;
+           position: absolute;
+           background: red;
+           border-radius: 50%;
+           bottom: 0%;
+           right: 50%;
+       }
+       .triangulo{
+           width: 5rem;
+           height: 5rem;
+           border-left: 1px solid transparent ;
+           border-bottom: 1px  transparent;
+           border-top: 1px solid  black;
+           border-right: 1px solid black;
+
+           margin: 50%; 
+       }
+    
+    </style>
+</head>
+<body>
+    <div class="forma"></div>
+    <div class="triangulo"></div>
+</body>
+</html>

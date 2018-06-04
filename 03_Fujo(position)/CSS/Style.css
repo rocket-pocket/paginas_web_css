@@ -1,0 +1,25 @@
+*,
+*::before, *::after,
+*:before, *:after{
+    box-sizing: border-box;
+}
+body{
+    margin: 2rem;
+}
+.one{
+    width: 30%;
+    padding: 1rem;
+    border-top: 1rem solid;
+    border-bottom: 1rem solid;
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    
+
+}
+ul li{
+    list-style-position: inside;
+}
+.clearfix{
+    clear: both;/* no se juntarán con los parrafos de arriba */
+}
