@@ -1,0 +1,70 @@
+*,
+*::before, *::after,
+*:before, *:after{
+    box-sizing: border-box;
+}
+section{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: red;
+    border: 1px black solid;
+   /* overflow: auto;*/
+                    /*sirve para cuando hacemos un "float" y los elemntos colapsan*/
+}
+section::after{ /* también podemos hacer un after con los mismos resultados*/
+    content:"";
+    display: block;
+    clear: both; /*"clear both" es el que hace que se descolapse*/
+    background: yellow;
+    height: 1rem;
+}
+
+.inline-block p{
+    background: black;
+    color: white;
+    width: 20%;
+    padding: 1.5rem;
+    display: inline-block;
+    margin-left: 3rem;
+    
+}
+.float p{
+    width: 20%;
+    background: rgb(139, 26, 184);
+    color: white;
+    padding: 1.5rem;
+    float: left;
+    margin-left: 3rem;
+}
+.container{
+   
+}
+.container p{
+    width: 30%;
+    float: right;
+    padding: 1.5rem;
+    background: coral;
+    vertical-align: top;
+    margin-top: 0;
+}
+
+.img-wrapper{
+    width: 40%;
+    float: left;   
+    
+    
+    
+    
+}
+img{
+    width: 100%;
+   
+   
+}
+.clearfix{
+    clear: both;
+}
+.hidden{
+    visibility: hidden;
+}
+    
