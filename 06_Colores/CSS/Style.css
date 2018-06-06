@@ -1,0 +1,32 @@
+
+h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+section div{
+    width: 40rem;
+    height: 40rem;
+    
+    background: linear-gradient(45deg, rgba(245, 111, 134, 0.9), rgba(151, 75, 75, 0.7), rgba(8, 223, 212, 0.5));
+    
+
+    
+}
+section div div{
+    width: 40rem;
+    height: 40rem;
+    background: linear-gradient(35deg, rgba(94, 101, 155, 0.8), rgba(90, 6, 116, 0.521));
+    /*background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));*/
+    position: absolute;
+    left: 50%;     
+}
+.radial{
+    width: 40rem;
+    height: 40rem;
+    border: 1px solid;
+    background: radial-gradient(ellipse farthest-corner at 45px 45px , #FF0000 0%, #0000FF 100%); 
+    
+    position: relative;
+}
+
