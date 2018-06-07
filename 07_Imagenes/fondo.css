@@ -1,0 +1,9 @@
+div{
+    width: 90%;
+    height: 80vh;
+    border: 2px red solid;
+    background-image: url("./assets/mario.png"),
+                      url("./assets/nubes.png"),
+                      url("./assets/suelo.png");
+    background-repeat: no-repeat;  
+}
