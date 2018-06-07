@@ -4,7 +4,7 @@
   "description": "Proyecto Front",
   "main": "index.js",
   "scripts": {
-    "start": "echo/saludos",
+    "start": "echo 'saludos'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <!-- PARA PROYECTO REAL INICIAR NPM - NODE-V/NPM -V/ EN LA CARPETA DESEADA NPM INIT ........package name: (proyecto)
     version: (1.0.0)
     description: Proyecto de Front
@@ -41,8 +34,214 @@ C:\Users\mañanas\Documents\Curso_web\paginas_web_css\PROYECTO> se creara un arc
 <!-- 2PASO:  en el CMD: npm i bootstrap Y SE CREARA UNA CARPETA QUE SE LLAMARÁ NODE MODULES Y YA TENDRIAMOS INSTALADO BOOTSTRAP--> 
 
 <!-- PARA TRABAJAR EN CASA, NO TENDREMOS BOOTSTRAP, PARA ELLO JSON CREA DEPENDENCIA Y SOLO TENDREMOS QUE PONER EN EL CMD "npm i" -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel verdú Martínez">
+    <meta name="description" content="francia, parís, história de francia, Torre E ">
+    <title>Francia</title>
+    <link rel="shortcut icon" href="./assets/images.png" type="image/x-png">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/Style.css">
 </head>
+
 <body>
-    
+    <header>
+        <h1>Francia</h1>
+        <div class="logo">
+            <a href="./index1.html">
+                <img src="./assets/french-button.png" alt="bandera francesa">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+                <li>
+                    <a href="#geo">Geografía</a>
+                </li>
+                <li>
+                    <a href="#hi">História</a>
+                </li>
+                <li>
+                    <a href="#eco">Economía</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="ini">
+            <div class="cita">
+                <blockquote>"La imaginación gobierna el mundo."</blockquote>
+                <cite>
+                    <em>Napoleón Bonaparte</em>
+                </cite>
+            </div>
+
+            <h2 id=inicio>Inicio</h2>
+            <article>
+                <p class="parrafoUno">
+                    <strong>Francia</strong> (en francés, France), oficialmente República Francesa (République française), es un
+                    país soberano, miembro de la Unión Europea, constituido en Estado social y democrático de derecho y cuya
+                    forma de gobierno es la república semipresidencialista.</p>
+                <p>Su territorio, que incluye regiones de ultramar, se extiende sobre una superficie total de 643 801 km².​
+                    En 2015 el país contaba con 66,3 millones de habitantes, 64,2 en la Francia metropolitana y 2,1 en los
+                    territorios de ultramar.​</p>
+            </article>
+            <article>
+                <table>
+                    <!--border="1"-->
+                    <tr>
+                        <th>Población</td>
+                            <td>67 158 000</td>
+
+                    </tr>
+                    <tr>
+                        <th>PIB</td>
+                            <td>US$ 2,833 billones</td>
+
+                    </tr>
+                    <tr>
+                        <th>Superficie</td>
+                            <td>643 80121​ km²</td>
+
+                    </tr>
+                    <tr>
+                        <th>Moneda</td>
+                            <td>Euro €</td>
+
+                    </tr>
+                    <tr>
+                        <th>Idioma</td>
+                            <td>Francés</td>
+
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <section class="geografiapic">
+            <article>
+                <div>
+                    <h2 id="geo">Geografía</h2>
+                </div>
+
+                <p>El territorio francés tiene una extensión de 643 801 km²,1​ lo que representa el 0,50 % de las tierras emergidas
+                    del planeta (Puesto 40º en el mundo). La Francia metropolitana, es decir, europea, cuenta con 551 500
+                    km²,1​ en tanto que la Francia de ultramar tiene otros 123 722 km² (sin considerar la Tierra Adelia por
+                    el Tratado Antártico en 1959 que suspendió el reconocimiento de todas las soberanías en dicha región).
+                    Sus islas de mayor tamaño son Nueva Caledonia y Córcega. </p>
+            </article>
+            <article>
+                <h3>Biodiversidad</h3>
+                <p>La mayor parte del territorio metropolitano de Francia corresponde al bioma de bosque templado de frondosas,
+                    aunque también están presentes el bosque templado de coníferas en los Alpes y el bosque mediterráneo
+                    en el sureste. La cantidad de venados y ciervos en estado salvaje se está incrementando gracias a políticas
+                    orientadas con este objetivo, además se garantiza la protección de las especies autóctonas no domésticas,
+                    con la creación de parques y reservas naturales, así como por la reintroducción de especies que fueron
+                    exterminadas en el país (oso pardo, lince y bisonte europeo, entre otros).</p>
+            </article>
+        </section>
+        <div class="bio">
+
+            <div class="lavanda">
+                <h3>Lavanda en la Provenza</h3>
+                <img src="./assets/biodi.jpg" alt="Campo de lavanda en la Provenza">
+            </div>
+
+            <div class="cereales">
+                <h3>Cereales en Beauce</h3>
+                <img src="./assets/800px-Beauce_3.jpg" alt="Cereales en Beuce">
+            </div>
+
+        </div>
+        <section class="historiasec">
+            <h2 id="hi">Historia</h2>
+            <div class="historiaimg"></div>
+            <p>En el año 451, Atila, el líder de los hunos invadió la Galia con ayuda de los pueblos francos y visigodos,13​
+                logrando establecerse en la parte principal de la Galia. En el siglo IV, la frontera del este de Galia a
+                lo largo del Rin fue cruzada por pueblos germánicos, principalmente los francos, de la que deriva el antiguo
+                nombre de «Francie». La «Francia moderna» debe su nombre al dominio feudal de los reyes capetos de Francia,
+                alrededor de París. Los francos fueron la primera tribu entre los conquistadores germánicos de Europa, después
+                de la caída del Imperio romano, en convertirse al cristianismo a raíz del bautismo del rey Clodoveo en 498;
+                así, Francia obtuvo el título de «Hija mayor de la Iglesia», y el país adoptaría esto como justificación
+                para llamarse «el reino más cristiano de Francia».</p>
+
+        </section>
+        <section class="economi">
+            <h2 id="eco">Economía</h2>
+            <div class="euro"></div>
+            <p>Francia es considerado un país de primer mundo por su nivel de vida (IDH). Es la quinta economía mundial en términos
+                nominales, y a nivel europeo se coloca por detrás de Alemania, con un PIB en dólares superior al del Reino
+                Unido. En 2006 el crecimiento económico francés llegó al 2 % siendo el más bajo de la zona euro y sus índices
+                de desempleo entre los más altos.9​</p>
+            <div class="franco"></div>
+            <p>La economía francesa cuenta con una gran base de empresas privadas, pero la intervención estatal en las grandes
+                compañías es superior a la de otras economías de su tamaño. Sectores clave con grandes inversiones en infraestructura
+                como el eléctrico, las telecomunicaciones o el sector aeronáutico, históricamente han sido dirigidos directamente
+                o indirectamente por el Estado, aunque desde principios de la década de 1990 la participación estatal ha
+                ido decayendo.</p>
+        </section>
+        <section class="about">
+            <h2 id="about">
+                <i class="fas fa-user"></i>About</h2>
+            <p>
+                <span>¡Conóceme!</span> Soy Daniel verdú, estudiante de Desarrollo Web en el CFTIC, pincha
+                <a href="./about.html">aquí</a> para saber más sobre mí o en el botón de abajo.</p>
+            <button type="button">
+                <a href="./about.html">About me</a>
+            </button>
+        </section>
+
+    </main>
+    <aside>
+        <p>¿Quieres saber más sobre Francia?. Visita la Wikipedia</p>
+        <div>
+            <a href="https://es.wikipedia.org/wiki/Francia">Wikipedia</a>
+        </div>
+        <!-- <div><p>Vive La France!</p></div> -->
+
+    </aside>
+    <footer>
+        <address hidden>
+            <div id="hcard-Daniel-Verdú" class="vcard">
+                <a class="url fn" href="http://dvdrones.com/">Daniel Verdú</a>
+                <div class="org">CFTIC</div>
+                
+                <a class="email" href="mailto:danielverdu123@gmail.com">danielverdu123@gmail.com</a>
+                <div class="adr">
+                    <div class="street-address">Conservatorio</div>
+                    <span class="locality">getafe</span>
+                    ,
+                    <span class="region">Madrid</span>
+                    ,
+                    <span class="postal-code">28938</span>
+
+                    <span class="country-name">Spain</span>
+
+                </div>
+                <div class="tel">0034 645 859 568</div>
+                <p style="font-size:smaller;">This
+                    <a href="http://microformats.org/wiki/hcard">hCard</a> created with the
+                    <a href="http://microformats.org/code/hcard/creator">hCard creator</a>.</p>
+            </div>
+        </address>
+        <p>
+            <small>&copy;Creative Design 2018</small>
+        </p>
+    </footer>
+
 </body>
+
 </html>
