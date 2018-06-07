@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "description": "Proyecto Front",
   "main": "index.js",
- "scripts": {                                                              
+  "scripts": {
+    "start": "echo/saludos",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["HTML", "CSS", "JS"], 
-  "author": "Daniel Verdú", 
-  "license": "ISC"
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JS"
+  ],
+  "author": "Daniel Verdú",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  }
 }
-
-
-
-
-
