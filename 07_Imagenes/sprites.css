@@ -1,16 +1,16 @@
 *{
     box-sizing: border-box;
 }
-div {height: 64px;
-    width: 64px;
+div {height: 4rem;
+    width: 4rem;
     float:left;
-    margin: 1em;
+    margin: 1rem;
     border: solid 1px black;
     background: url(./assets/social-icons.png);
 }
 div#icono1 {background-position: 0px 0px; /*Icono RSS*/
 }
-div#icono2 {background-position: 64px 64px; /* x px y px - Icono Facebook*/
+div#icono2 {background-position: 0px 4rem; /* x px y px - Icono Facebook*/ /*tAMBIÉN SE PUEDEN PONER EN REMS*/
 }
 div#icono3 {background-position: 128px 64px; /* x px y px - Icono FR*/
 }
