@@ -1,0 +1,32 @@
+/*body{
+    background: blue;
+    margin: 2rem;
+}
+header h1{
+    color: brown;
+}
+
+header p{
+    font-size: 1.5rem;
+}*/ /*se puede escribir css dentro de sass ya que es css lo que va a procesar*/
+
+body{
+    margin: 2rem;
+    background-color: blue;
+    header{
+        width: 100%;
+        height: 20vh;
+        background: white;
+        h1{}
+        p{font-size: 1.5rem; color: red;}
+    }
+}
+/* Despues hay que procesarlo, para ello en la consola iremos a la ruta donde este ese fichero style.scss y ponemos: sass +nombre archivo y nos sacará el css por la pantalla(consola)
+2-- en la consola : sass style.scss style.css para que cree un archivo que podamos linkar */
+
+/*opcion 2: crear carpeta SCSS + CSS y ejecutar en CMD: sass scss:css y se creará el fichero automático */
+
+/*cada cambio que hacemos tendriamos que volver a compilar, pra evitar esto usaremos un "watcher" para ello en el cmd pondremos: npm init -y  
+una vez creado el json encima de texto crearemos un script que sea: "sass":"sass scss:css",      para comprobar que funciona ponemos:npm run sass con esto todavía no estaría creado el watch*/
+
+/**/
