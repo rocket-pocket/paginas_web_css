@@ -24,8 +24,8 @@ header p{
 }
 
 body{
-    margin: 2rem;
-    background-color: blue;
+    
+    background-color: rgb(109, 204, 221);
    /*  header{
         width: 100%;
         height: 20vh;
@@ -35,6 +35,27 @@ body{
     } */
 }
 @import'_header.scss';
+main{
+    section{
+        h2{font-size: 2.5rem; margin: 5rem; }
+    }
+}
+footer{
+    width: 100%;
+    height: 6rem;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    address{
+        p:nth-of-type(2){ margin: 0.5rem; font-size: 1rem; color: blue}
+    }
+        >p{font-size: 1.6rem; color: red;} //>para anidar y apuntar directamente a un elemnto en concreto}
+         
+    
+}
+
+
 /* Despues hay que procesarlo, para ello en la consola iremos a la ruta donde este ese fichero style.scss y ponemos: sass +nombre archivo y nos sacará el css por la pantalla(consola)
 2-- en la consola : sass style.scss style.css para que cree un archivo que podamos linkar */
 

@@ -3,4 +3,7 @@ header{
     height: 20vh;
     background: white;
     @import'_header2.scss';
+    /* :hover{background: black;}  no se hace así hay que hacer un & (autoreferencia)*/
+    &:hover{background: rgb(227, 166, 235);}
+
 }
