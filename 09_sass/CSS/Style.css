@@ -11,12 +11,16 @@ header p{
     font-size: 1.5rem;
 }*/
 /*se puede escribir css dentro de sass ya que es css lo que va a procesar*/
+/*sass es un compilador (un traductor)*/
+/*instalacion sass para npm : npm i -g sass*/
 body {
   margin: 2rem;
   background-color: blue;
 }
 body header {
   width: 100%;
+  height: 20vh;
+  background: white;
 }
 body header p {
   font-size: 1.5rem;
@@ -27,6 +31,7 @@ body header p {
 2-- en la consola : sass style.scss style.css para que cree un archivo que podamos linkar */
 /*opcion 2: crear carpeta SCSS + CSS y ejecutar en CMD: sass scss:css y se creará el fichero automático */
 /*cada cambio que hacemos tendriamos que volver a compilar, pra evitar esto usaremos un "watcher" para ello en el cmd pondremos: npm init -y  
-una vez creado el json encima de texto crearemos un script que sea: "sass":"sass scss:css",      para comprobar que funciona ponemos:npm run sass*/
+una vez creado el json encima de texto crearemos un script que sea: "sass":"sass scss:css",      para comprobar que funciona ponemos:npm run sass con esto todavía no estaría creado el watch*/
+/*4 bootstrap necesita jquery y popper.js para ello en el cmd apuntando a la carpeta donde este el package json/ y ejecutamos: npmi i y nos avisará de que tenmos que instalar jquery y popper.js, ejecutamos la instalación y listo*/
 
 /*# sourceMappingURL=css/Style.css.map */
