@@ -26,14 +26,15 @@ header p{
 body{
     margin: 2rem;
     background-color: blue;
-    header{
+   /*  header{
         width: 100%;
         height: 20vh;
         background: white;
         h1{ font-size: 6rem;}
-        p{font-size: 1.5rem; color: blue;}
-    }
+        p{font-size: 1.5rem; color: blue;} nos lo llevamos a header.scss
+    } */
 }
+@import'_header.scss';
 /* Despues hay que procesarlo, para ello en la consola iremos a la ruta donde este ese fichero style.scss y ponemos: sass +nombre archivo y nos sacará el css por la pantalla(consola)
 2-- en la consola : sass style.scss style.css para que cree un archivo que podamos linkar */
 
