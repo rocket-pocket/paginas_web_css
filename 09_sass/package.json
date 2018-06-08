@@ -1,10 +1,11 @@
 {
   "name": "09_sass",
   "version": "1.0.0",
-  "description": "",
+  "description": "scss",
   "main": "index.js",
   "scripts": {
     "sass":"sass scss:css",
+    "vigilar":"nodemon -e scss -x \"sass scss:css\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
