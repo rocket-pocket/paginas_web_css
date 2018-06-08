@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/* 1.ventaja podemos importar un fichero (en css tenía que estar en la primera línea), en sass da igual el lugar donde lo pongamos. Hay dos tipos:
+                                            -@import'extra.scss' 
+                                            -@import'_extra.scss' (nos ahorramos tener un fichero que no queremos para nada el _ hace que no se compile
+                                            sería por CUESTIONES DE RENDIMIENTO*/
 /*body{
     background: blue;
     margin: 2rem;
