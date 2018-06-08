@@ -1,9 +1,18 @@
+/*$fondo: aquamarine;
+$fondo2: red;
+ $fondo3: $fondo + $fondo2; */
+/* $margen1: 20%;
+$margen2: 10%;
+$margen3: $margen1 + $margen2; */
+
 header{
-    width: 100%;
+    width: 60%;
     height: 20vh;
-    background: white;
+   
+    background: blue;
     @import'_header2.scss';
     /* :hover{background: black;}  no se hace así hay que hacer un & (autoreferencia)*/
-    &:hover{background: rgb(227, 166, 235);}
+   // &:hover{background: rgb(227, 166, 235);}
+   &:hover{background:blue;}//llamada a la variable
 
 }
