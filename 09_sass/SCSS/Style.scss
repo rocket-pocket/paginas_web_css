@@ -52,6 +52,15 @@ una vez creado el json encima de texto crearemos un script que sea: "sass":"sass
 
   se ejecuta: npm run vigilar
 
+  para ejecutar varios scripts enh npm 
+
+            "start":"parallelshell \"npm run server\" \"npm run vigilar\"",
+
+            para que el servidor se ejecute en todos nuestros proyectos cambiar el script "start":
+
+            "server":"http-server ../",  ->>> ../
+            o así : "start":"http-server ..\"",
+
 
   */
 
