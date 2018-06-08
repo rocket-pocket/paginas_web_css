@@ -29,4 +29,5 @@ body{
 /*cada cambio que hacemos tendriamos que volver a compilar, pra evitar esto usaremos un "watcher" para ello en el cmd pondremos: npm init -y  
 una vez creado el json encima de texto crearemos un script que sea: "sass":"sass scss:css",      para comprobar que funciona ponemos:npm run sass con esto todavía no estaría creado el watch*/
 
-/**/
+
+/*4 bootstrap necesita jquery y popper.js para ello en el cmd apuntando a la carpeta donde este el package json/ y ejecutamos: npmi i y nos avisará de que tenmos que instalar jquery y popper.js, ejecutamos la instalación y listo*/
