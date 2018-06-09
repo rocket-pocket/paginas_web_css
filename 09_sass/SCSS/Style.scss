@@ -24,7 +24,9 @@ header p{
 $margen2: 10%;
 $margen3: $margen1 + $margen2; */
 $fondo: aqua;
-
+$margen1: 5%;
+$margen2: 20%;
+$margen3: $margen1 + $margen2;
 *,
 *::before, *::after,
 *:before, *:after{
@@ -52,10 +54,11 @@ main{
     }
 }
 footer{
-    width: 10%;
+    width: 40%;
     height: 6rem;
+    margin: $margen3;
     
-    background: green;
+    background: $fondo;
     /* position: absolute; */
     bottom: 0;
     color: $fondo;

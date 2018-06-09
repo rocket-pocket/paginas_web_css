@@ -76,9 +76,10 @@ main section h2 {
 }
 
 footer {
-  width: 10%;
+  width: 40%;
   height: 6rem;
-  background: green;
+  margin: 25%;
+  background: aqua;
   /* position: absolute; */
   bottom: 0;
   color: aqua;
