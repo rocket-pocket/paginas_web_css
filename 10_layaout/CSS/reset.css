@@ -53,28 +53,4 @@ table {
   border-spacing: 0;
 }
 
-nav {
-  background: #033e81;
-  position: relative;
-}
-nav ul {
-  list-style: none;
-}
-nav ul::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-nav li {
-  float: left;
-}
-nav a {
-  color: #d8d4d4;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-family: "roboto";
-  text-decoration: none;
-  padding: 2rem;
-}
-
-/*# sourceMappingURL=css/style.css.map */
+/*# sourceMappingURL=css/reset.css.map */
