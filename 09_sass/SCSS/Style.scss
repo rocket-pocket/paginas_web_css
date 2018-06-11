@@ -45,10 +45,32 @@ body{
         p{font-size: 1.5rem; color: blue;} nos lo llevamos a header.scss
     } */
 }
+@mixin h2yp ($color: white){ //pasando un valor por defecto para poder aplicarlo a los demas mixines
+    font-size: 1.1;
+    font-family: roboto;    
+    margin: 1rem;
+}
+@mixin centrar($ancho){ //($ancho) darle un parametro, no es una variable
+    width: $ancho;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @import'_header.scss';
 main{
     section{
-        h2{font-size: 2.5rem; margin: 1rem; }
+        h2{ @include h2yp($color: lime); color: $fondo2; }
+    }
+    p{
+        @include h2yp; //los mixin tienen el inconveniente de genarar mas codigo pero mas potente
+       /* @extend h2; //los extend generan un codigo mas  compacto pero menospotente
+       font-size: 1rem; */
+       &:nth-child(2){
+            @include centrar(50%)
+       }
+       &:nth-child(3){
+           @include centrar(80%)
+       }
     }
 }
 footer{
@@ -102,5 +124,26 @@ una vez creado el json encima de texto crearemos un script que sea: "sass":"sass
 
 
   */
+
+/*  necesitammos un json para hacer que NPM funcione como gestor de tareas,
+    ya que es el unico sitio donde podemos escribir scripts
+
+
+{
+    "name": "09_sass",
+    "version": "1.0.0",
+    "description": "scss",
+    "main": "index.js",
+    "scripts": {
+      "start":"parallelshell \"npm run server\" \"npm run vigilar\"", (pra ejecutar este comando necesito entrar en la carpeta donde esta package json)
+      "server":"http-server ..\"", 
+      "sass":"sass scss:css",  (instruccion necesaria para poder compilar)
+      "vigilar":"nodemon -e scss -x \"sass scss:css\"",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  } */
 
 

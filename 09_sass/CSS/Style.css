@@ -43,16 +43,14 @@ body {
    } */
 }
 
-/*$fondo: aquamarine;
-$fondo2: red;
- $fondo3: $fondo + $fondo2; */
+/*$fondo3: $fondo + $fondo2; */
 /* $margen1: 20%;
 $margen2: 10%;
 $margen3: $margen1 + $margen2; */
 header {
-  width: 60%;
+  width: 100%;
   height: 20vh;
-  background: blue;
+  background: aquamarine;
   /* :hover{background: black;}  no se hace así hay que hacer un & (autoreferencia)*/
 }
 header h1 {
@@ -67,12 +65,37 @@ header p {
   letter-spacing: 0.4rem;
 }
 header:hover {
-  background: blue;
+  background: #f8f8f8;
+}
+header li {
+  float: left;
+}
+header a {
+  padding: 1rem 2rem;
 }
 
 main section h2 {
-  font-size: 2.5rem;
+  font-size: 1.1;
+  font-family: roboto;
   margin: 1rem;
+  color: #02134b;
+}
+main p {
+  font-size: 1.1;
+  font-family: roboto;
+  margin: 1rem;
+  /* @extend h2; //los extend generan un codigo mas  compacto pero menospotente
+  font-size: 1rem; */
+}
+main p:nth-child(2) {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+main p:nth-child(3) {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
@@ -81,7 +104,7 @@ footer {
   background: green;
   /* position: absolute; */
   bottom: 0;
-  color: aqua;
+  color: aquamarine;
 }
 footer address p:nth-of-type(2) {
   margin: 0.5rem;
@@ -123,5 +146,25 @@ una vez creado el json encima de texto crearemos un script que sea: "sass":"sass
 
 
   */
+/*  necesitammos un json para hacer que NPM funcione como gestor de tareas,
+    ya que es el unico sitio donde podemos escribir scripts
+
+
+{
+    "name": "09_sass",
+    "version": "1.0.0",
+    "description": "scss",
+    "main": "index.js",
+    "scripts": {
+      "start":"parallelshell \"npm run server\" \"npm run vigilar\"", (pra ejecutar este comando necesito entrar en la carpeta donde esta package json)
+      "server":"http-server ..\"", 
+      "sass":"sass scss:css",  (instruccion necesaria para poder compilar)
+      "vigilar":"nodemon -e scss -x \"sass scss:css\"",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  } */
 
 /*# sourceMappingURL=css/Style.css.map */
