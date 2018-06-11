@@ -47,12 +47,13 @@ body{
         p{font-size: 1.5rem; color: blue;} nos lo llevamos a header.scss
     } */
 }
-@mixin h2yp ($color: white){ //pasando un valor por defecto para poder aplicarlo a los demas mixines
+@mixin h2yp ($color:white){ //pasando un valor por defecto para poder aplicarlo a los demas mixines
     font-size: 1.1;
     font-family: roboto;    
     margin: 1rem;
 }
-@mixin centrar($ancho){ //($ancho) darle un parametro, no es una variable
+@mixin centrar($fuente, $ancho:80%){ //($ancho) darle un parametro, no es una variable, tambien se puede escribir asi ($ancho:80%)
+    font-size: $fuente;
     width: $ancho;
     margin-left: auto;
     margin-right: auto;
@@ -68,10 +69,10 @@ main{
        /* @extend h2; //los extend generan un codigo mas  compacto pero menospotente
        font-size: 1rem; */
        &:nth-child(2){
-            @include centrar(50%)
+            @include centrar(1.5rem, 50%)
        }
        &:nth-child(3){
-           @include centrar(80%)
+           @include centrar(2.5rem)
        }
     }
 }
