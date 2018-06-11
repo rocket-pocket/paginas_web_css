@@ -99,9 +99,10 @@ main p:nth-child(3) {
 }
 
 footer {
-  width: 10%;
+  width: 40%;
   height: 6rem;
-  background: green;
+  margin: 25%;
+  background: aquamarine;
   /* position: absolute; */
   bottom: 0;
   color: aquamarine;
@@ -127,6 +128,7 @@ una vez creado el json encima de texto crearemos un script que sea: "sass":"sass
   }, */
 /*todavia no esta en esta version de npm: entonces instalamos NODEMON(es un mega watcher que actualiza node) en npm:npm i -g nodemon, para comprobar su instalación : nodemon --version, de NODEMON nos va a interesar desde esta url: https://github.com/remy/nodemon#nodemon para ver que opcion nos interesaria
 
+  Una vez instalado-
   en el json creamos un script:   "scripts": {
     "sass":"sass scss:css",
     "vigilar":"nodemon -e scss -x \"sass scss:css\"",

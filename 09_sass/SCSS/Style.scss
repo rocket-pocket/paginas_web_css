@@ -24,7 +24,9 @@ header p{
 $margen2: 10%;
 $margen3: $margen1 + $margen2; */
 $fondo: aqua;
-
+$margen1: 5%;
+$margen2: 20%;
+$margen3: $margen1 + $margen2;
 *,
 *::before, *::after,
 *:before, *:after{
@@ -74,10 +76,11 @@ main{
     }
 }
 footer{
-    width: 10%;
+    width: 40%;
     height: 6rem;
+    margin: $margen3;
     
-    background: green;
+    background: $fondo;
     /* position: absolute; */
     bottom: 0;
     color: $fondo;
@@ -105,6 +108,7 @@ una vez creado el json encima de texto crearemos un script que sea: "sass":"sass
 
   /*todavia no esta en esta version de npm: entonces instalamos NODEMON(es un mega watcher que actualiza node) en npm:npm i -g nodemon, para comprobar su instalación : nodemon --version, de NODEMON nos va a interesar desde esta url: https://github.com/remy/nodemon#nodemon para ver que opcion nos interesaria
 
+  Una vez instalado-
   en el json creamos un script:   "scripts": {
     "sass":"sass scss:css",
     "vigilar":"nodemon -e scss -x \"sass scss:css\"",
