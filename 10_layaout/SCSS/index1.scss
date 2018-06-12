@@ -1,0 +1,115 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Fredericka the Great';
+    font-weight: 400;
+}
+header{
+    width: 100%;
+    height: 100vh;    
+    background-image: url('../assets/milky-way-2695569_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 3rem;
+    
+    &::before{
+        content:"";
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(131, 31, 31);
+        background-blend-mode: overlay;
+        position: absolute; 
+        opacity: 0.5;
+    }
+    h1{
+        width: 100%;
+        font-size: 6rem;
+        text-transform: uppercase;
+        color: white;
+        position: absolute;
+        top: 35%;
+        text-align: center;
+        z-index: 200; 
+        
+    }
+    ul{
+        width: 100%;
+        list-style: none;
+        padding-top: 3rem;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 20;
+        &:after{
+            content:"";
+            display: block;
+            clear: both;
+        }      
+        
+    }
+    li{
+        width: 20%;
+        float: left;
+        
+    }
+    a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+       
+    }
+}
+main{
+    overflow: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+     
+    section{
+    width:75%;
+    float:left; 
+    /* overflow: auto; */    
+    padding-right: 2rem;
+    P{
+        &:nth-child(1){
+            margin-top: 0;
+        }
+    }   
+    
+    }
+    div{
+        width: 50%;
+        float:left;
+        padding: 0 2rem;
+    }
+}
+
+aside{
+    width: 25%;
+    float: left;
+    /* overflow: auto; */
+       
+    padding-left: 3rem;
+   /*  p{
+        padding-top: 1rem;
+    } */
+     
+    
+}
+ footer{
+    width: 100%;
+    height: 8rem;
+    background: yellow;
+    background-image:url("../assets/milky-way-2695569_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 5rem;
+    bottom: 0;
+    address{
+        text-align:center;
+        color: white;
+        padding-top: 3rem;
+    }
+} 
