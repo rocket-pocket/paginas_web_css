@@ -1,0 +1,17 @@
+$relativa: relative;
+
+div{
+    width: 50%;
+    background: salmon;
+    padding: 1rem;
+    margin: 1rem;
+    p{
+        padding: 2rem;
+        background: aquamarine; 
+    }
+}
+.relative{
+    position: $relativa;//se crea una sombra (genera una nueva capa) del elemnto y se le dan coordenadas desde donde empieza el elemento, no afecta a los demas elemntos relative(coordenadas relativas a la misma posicion del elemnto)
+    top: 10rem;
+    left: 25%;
+}

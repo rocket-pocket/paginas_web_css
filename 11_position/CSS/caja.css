@@ -1,0 +1,15 @@
+body {
+  height: 100vh;
+}
+
+div {
+  padding: 2rem;
+  background: salmon;
+  width: 50%;
+  height: 20%;
+  position: relative;
+  left: 25%;
+  top: 40%;
+}
+
+/*# sourceMappingURL=css/caja.css.map */

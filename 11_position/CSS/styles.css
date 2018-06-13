@@ -1,0 +1,18 @@
+div {
+  width: 50%;
+  background: salmon;
+  padding: 1rem;
+  margin: 1rem;
+}
+div p {
+  padding: 2rem;
+  background: aquamarine;
+}
+
+.relative {
+  position: relative;
+  top: 10rem;
+  left: 25%;
+}
+
+/*# sourceMappingURL=css/styles.css.map */
