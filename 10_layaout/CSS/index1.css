@@ -68,8 +68,7 @@ header li ul {
   display: none;
   background: transparent;
 }
-header li ul li a {
-  color: black;
+header li ul>li {
   display: block;
 }
 header li:hover > ul {

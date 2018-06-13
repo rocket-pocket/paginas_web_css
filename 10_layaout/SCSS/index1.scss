@@ -79,10 +79,7 @@ header{
             display: none;
             background: transparent;
             li{
-                a{
-                    color: black;
-                    display: block;
-                }
+                display: block;
             }
         }
         &:hover>ul{
