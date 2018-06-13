@@ -36,6 +36,8 @@ header{
         opacity: 0.5;
     }
     nav{
+        position: absolute;
+        z-index: 200;
     }
     h1{
         width: 100%;
@@ -70,6 +72,24 @@ header{
     li{
         width: 20%;
         float: left;
+        ul{
+            
+            position: absolute;
+            z-index: -10;
+            display: none;
+            background: transparent;
+            li{
+                a{
+                    color: black;
+                    display: block;
+                }
+            }
+        }
+        &:hover>ul{
+            display: block;
+            margin-top: 4rem;
+            transition: 0.9s;
+        }
         
         
     }

@@ -26,6 +26,10 @@ header::before {
   position: absolute;
   opacity: 0.5;
 }
+header nav {
+  position: absolute;
+  z-index: 200;
+}
 header h1 {
   width: 100%;
   font-size: 6rem;
@@ -57,6 +61,21 @@ header ul:after {
 header li {
   width: 20%;
   float: left;
+}
+header li ul {
+  position: absolute;
+  z-index: -10;
+  display: none;
+  background: transparent;
+}
+header li ul li a {
+  color: black;
+  display: block;
+}
+header li:hover > ul {
+  display: block;
+  margin-top: 4rem;
+  transition: 0.9s;
 }
 header a {
   color: white;
