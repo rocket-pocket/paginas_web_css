@@ -3,6 +3,8 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Fredericka the Great";
   font-weight: 400;
 }
@@ -37,11 +39,15 @@ header h1 {
 header ul {
   width: 100%;
   list-style: none;
+  margin-top: 0;
   padding-top: 3rem;
   text-align: center;
   text-transform: uppercase;
   position: relative;
   z-index: 20;
+  position: fixed;
+  top: 0;
+  background: black;
 }
 header ul:after {
   content: "";

@@ -6,7 +6,12 @@ div{
     background: salmon;
     width: 50%;
     height: 20%;
-    position: relative;
-    left: 25%;
-    top: 40%;
+    position: absolute;
+    //position: relative;
+    //left: 25%;
+    //top: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+
 }
