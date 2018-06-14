@@ -57,7 +57,6 @@ header{
         padding-top: 3rem;
         text-align: center;
         text-transform: uppercase;
-        position: relative;
         z-index: 20;
         position: fixed;
         top: 0;
@@ -69,9 +68,15 @@ header{
         }      
         
     }
+    >li{
+        padding:2rem 4rem;
+    }
     li{
-        width: 20%;
-        float: left;
+        width: 15%;
+        display: inline-block;
+        &:hover{
+            background: white;
+        }
         ul{
             
             position: absolute;
@@ -87,6 +92,21 @@ header{
             margin-top: 4rem;
             transition: 0.9s;
         }
+        .menu_tres{
+            position: absolute;
+            top: 0%;
+            left: 14.8%;
+            >li{
+                padding: 0.5rem;
+                width: 20%;
+            }
+        }
+        .menu_dos{
+            >li{
+                padding: 0.5rem;
+                
+            }
+        }
         
         
     }
@@ -95,6 +115,10 @@ header{
         text-decoration: none;
         font-size: 1.5rem;
         padding: 1rem 1.5rem;
+        &:hover{
+            color: black;
+        }
+       
        
     }
 }
