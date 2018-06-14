@@ -68,11 +68,13 @@ img{
     visibility: hidden;
 }
 .table{
+    width: 100%;
     
   display: table;
 }
 .table div{
     display: table-row;
+    width: 100%;
 }
 p{
     padding: 1rem;
