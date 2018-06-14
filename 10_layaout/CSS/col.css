@@ -111,7 +111,6 @@ main {
 main section {
   width: 75%;
   float: left;
-  /* overflow: auto; */
   padding-right: 2rem;
 }
 main section P:nth-child(1) {
@@ -128,11 +127,7 @@ aside {
   max-width: 500px;
   width: 25%;
   float: left;
-  /* overflow: auto; */
   padding-left: 3rem;
-  /*  p{
-       padding-top: 1rem;
-   } */
 }
 
 footer {

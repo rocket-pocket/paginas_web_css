@@ -129,8 +129,7 @@ main{
      
     section{
     width:75%;
-    float:left; 
-    /* overflow: auto; */    
+    float:left;     
     padding-right: 2rem;
     P{
         &:nth-child(1){
@@ -140,7 +139,7 @@ main{
     
     }
     div{
-       column-count: 2;
+       column-count: 2; /////// etiquetas nuevas relacionadas con las grid
        gap: 4rem;
        column-rule: 1px solid;
        
@@ -149,16 +148,11 @@ main{
 }
 
 aside{
-    min-width: 269px;//min width muy importante
+    min-width: 269px;
     max-width: 500px;
     width: 25%;
-    float: left;
-    /* overflow: auto; */
-       
-    padding-left: 3rem;
-   /*  p{
-        padding-top: 1rem;
-    } */
+    float: left;       
+    padding-left: 3rem; 
      
     
 }
