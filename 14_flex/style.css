@@ -1,0 +1,51 @@
+section{
+    height: 80vh;
+    display: flex; /* en bloque */
+   /* display:inline-flex;  en linea (permite a otros elementos posicionarse al lado de otros) */
+    background: grey;
+    flex-direction: row; /* row: es el valor por defecto
+                                row-reverse: invierte el orden
+                                colum: cambia los ejes convierta el eje main en secundario y el secundario en main
+                                column-reverse: invierte el orden
+                                column: sedistribuyen en columnas muy util para moviles */
+    flex-wrap: wrap ;              /* su valor por defecto es nowrap.
+                                      wrap: empaqueta todos los elemntos
+                                      wrap-reverse: */
+
+
+    justify-content: space-evenly;/*    space-around
+                                      space-between
+                                      flex-end
+                                      center */
+
+    align-items: baseline ; /*strech: por defecto 
+                                flex-start: arriba
+                                flex-end: abajo
+                                baseline: centrado */ 
+    align-content: center; /*       (la pantalla tiene que ser pequeña)
+                                    flex-start: coloca todas las lineas arriba
+                                    flex-end: el conjunto de ls lineas se colocan abajo
+                                    center: centra los elementos  */   
+
+}
+div{
+    margin: 0.5rem;
+    font-size: 3rem;
+    padding: 1rem;
+    background: salmon;
+}
+div:nth-child(2){
+    font-size: 5rem;
+    order: 1;
+}
+div:nth-child(3){
+    font-size: 5rem;
+    order: 2;
+}
+div:nth-child(4){
+    font-size: 5rem;
+    order: 3;
+}
+div:nth-child(5){
+    font-size: 5rem;
+}
