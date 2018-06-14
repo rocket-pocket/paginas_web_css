@@ -124,6 +124,8 @@ main div {
 }
 
 aside {
+  min-width: 269px;
+  max-width: 500px;
   width: 25%;
   float: left;
   /* overflow: auto; */

@@ -147,6 +147,8 @@ main{
 }
 
 aside{
+    min-width: 269px;//min width muy importante
+    max-width: 500px;
     width: 25%;
     float: left;
     /* overflow: auto; */
