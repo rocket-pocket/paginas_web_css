@@ -1,0 +1,17 @@
+$blackbold: rgb(56, 56, 56);
+.header{
+    width: 100%;
+    height: 10rem;
+    background: $blackbold;
+}
+.container{
+    width: 100%;
+    height: 1000px;
+    .wrapper{
+        width: 30%;
+        background: rgb(48, 179, 157);
+        height: 100%;
+        position: relative;
+    }        
+  
+}

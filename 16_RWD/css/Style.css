@@ -1,0 +1,83 @@
+body {
+  background: #005279;
+}
+
+header h1 {
+  color: white;
+  font-family: "lobster";
+  text-align: center;
+}
+
+/* .wrapper{
+    display: flex;
+} */
+section {
+  color: white;
+}
+section h2 {
+  text-align: center;
+}
+
+aside {
+  color: white;
+  padding: 2rem;
+}
+aside h2 {
+  text-align: center;
+}
+
+footer {
+  color: white;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  /* body{
+      background: green;
+      transition: 0.9s;
+  } */
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  header h1 {
+    color: green;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    background: black;
+  }
+
+  h1 {
+    font-size: 5.6rem;
+  }
+
+  .wrapper {
+    display: flex;
+  }
+  .wrapper .wrapper_column {
+    flex: 0 1 75%;
+    padding: 2rem;
+    text-align: left;
+  }
+  .wrapper aside {
+    flex: 0 1 25%;
+    padding: 2rem;
+  }
+}
+@media screen and (min-width: 820px) {
+  section h2 {
+    text-align: left;
+  }
+
+  .wrapper_col {
+    column-count: 2;
+    column-gap: 2rem;
+  }
+  .wrapper_col p:nth-of-type(1) {
+    margin-top: 0;
+  }
+}
+
+/*# sourceMappingURL=css/Style.css.map */

@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Fredericka the Great";
+  font-weight: 400;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/home-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3rem;
+}
+header::before {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  background-color: #831f1f;
+  background-blend-mode: overlay;
+  position: absolute;
+  opacity: 0.5;
+}
+header nav {
+  position: absolute;
+  z-index: 200;
+}
+header h1 {
+  width: 100%;
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: white;
+  position: absolute;
+  top: 33%;
+  text-align: center;
+  z-index: 200;
+}
+header ul {
+  width: 100%;
+  list-style: none;
+  margin-top: 0;
+  padding-top: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  background: black;
+}
+header ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+header > li {
+  padding: 2rem 4rem;
+}
+header li {
+  width: 15%;
+  display: inline-block;
+}
+header li:hover {
+  background: white;
+}
+header li ul {
+  position: absolute;
+  z-index: -10;
+  display: none;
+  background: transparent;
+}
+header li ul li {
+  display: block;
+}
+header li:hover > ul {
+  display: block;
+  margin-top: 4rem;
+  transition: 0.9s;
+}
+header li .menu_tres {
+  position: absolute;
+  top: 0%;
+  left: 14.8%;
+}
+header li .menu_tres > li {
+  padding: 0.5rem;
+  width: 20%;
+}
+header li .menu_dos > li {
+  padding: 0.5rem;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+}
+header a:hover {
+  color: black;
+}
+
+main {
+  overflow: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+main section {
+  width: 75%;
+  float: left;
+  padding-right: 2rem;
+}
+main section P:nth-child(1) {
+  margin-top: 0;
+}
+main div {
+  column-count: 2;
+  gap: 4rem;
+  column-rule: 1px solid;
+}
+
+aside {
+  min-width: 269px;
+  max-width: 500px;
+  width: 25%;
+  float: left;
+  padding-left: 3rem;
+}
+
+footer {
+  width: 100%;
+  height: 8rem;
+  background: yellow;
+  background-image: url("../assets/home-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 5rem;
+  bottom: 0;
+}
+footer address {
+  text-align: center;
+  color: white;
+  padding-top: 3rem;
+}
+
+/*# sourceMappingURL=css/col.css.map */
