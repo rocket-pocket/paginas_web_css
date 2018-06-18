@@ -1,0 +1,44 @@
+body{
+    background: black;
+    color: white;
+}
+header{
+    width: 100%;
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu{
+        display: none;
+    } 
+    ul{
+        list-style: none;
+        width: 75%;
+        display: flex;
+    }
+    li{
+        padding: 0 1rem;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .submenu{
+            display: block;
+        }
+    }
+    .hamburguesa{
+        font-size: 3rem;
+        width: 25%;
+        &:hover ul .menu{
+            display: block;
+        }
+        
+    }
+}
+
+@media screen and (min-width: 480px){
+     .menu{
+        display: flex;
+    }
+    
+}

@@ -1,0 +1,45 @@
+body {
+  background: black;
+  color: white;
+}
+
+header {
+  width: 100%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header .menu {
+  display: none;
+}
+header ul {
+  list-style: none;
+  width: 75%;
+  display: flex;
+}
+header li {
+  padding: 0 1rem;
+}
+header li a {
+  text-decoration: none;
+  color: white;
+}
+header li .submenu {
+  display: block;
+}
+header .hamburguesa {
+  font-size: 3rem;
+  width: 25%;
+}
+header .hamburguesa:hover ul .menu {
+  display: block;
+}
+
+@media screen and (min-width: 480px) {
+  .menu {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=css/hamburguesa.css.map */

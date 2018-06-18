@@ -3,10 +3,26 @@ body{
 }
 
 header{
+    display: flex;
+    justify-content: space-between;
     h1{
         color: white;
         font-family: 'lobster';
-        text-align: center;
+        /* text-align: center; */
+        margin-top: 0;
+    }
+    .hamburguesa{
+        color: white;
+        font-size: 2rem;
+        i{
+            padding: 1rem 0rem;
+        }
+        a{
+            
+            text-decoration: none;
+            color: white;
+        }
+        
     }
 }
 /* .wrapper{
@@ -27,9 +43,66 @@ aside{
     }
 }
 footer{
-    color: white;
+    color: black;
     text-align: center;
+    width: 100%;
+    height: 10vh;
+    background: white;
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
 }
+.imagenes{
+    width: 80%;
+    position: relative;
+    left: 10%;
+    border: 1px solid white;
+    display: flex;
+    .foto{
+        width: 50%;
+         
+         img{
+             width: 100%;
+             height: 100%;
+             display: flex;
+         }
+    }
+}
+nav{
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+       /*  display: none; */ 
+    }
+    li{
+        .menu_despe{
+            /* display: none; */
+            a{
+               color: lime;
+            }
+        }
+        &:hover .menu_despe{
+            display: block;
+            margin-top: 1rem;
+            position: relative;
+            /* top: 2rem; */
+        }
+
+    }
+    a{
+        text-decoration: none;
+        color: red;
+        padding: 1rem 1rem;
+        &:hover{
+            background: blue;
+        }
+    }
+}
+.hide_menu{
+    display: none;
+}
+
 
 
 
@@ -61,31 +134,49 @@ footer{
         font-size: 5.6rem;
         
     }
+    .hamburguesa{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
     .wrapper{
         display: flex;
         .wrapper_column{
-            flex: 0 1 75%;
+            width: 75%;
+            flex: 0 1 50%;
             padding: 2rem;
             text-align: left;
         }
         aside{
-            flex: 0 1 25%;
-            padding: 2rem;
+            width: 25%;
+            flex: 0 1 50%; 
+            padding: 0 1rem;
+           
         }
     }
 }
 @media screen and (min-width: 820px){
     section{
-        h2{
-            text-align: left;
-        }
-    }
-    .wrapper_col{
-        column-count: 2;
-        column-gap: 2rem;
         p:nth-of-type(1){
             margin-top: 0;
         } 
+        h2{
+            text-align: left;
+        }
+        p{
+            flex: 0 0 50%;
+            padding: 0 1rem;
+        }
+        .wrapper_item_flex{
+            width: 50%;
+        }
+    }
+    .wrapper_col{
+       /*  column-count: 2; 
+        column-gap: 2rem; */
+        display: flex;
+        flex-wrap: wrap;
     }
 
 }
