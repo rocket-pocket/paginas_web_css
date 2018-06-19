@@ -1,0 +1,72 @@
+*,
+*::before, *::after,
+*:before, *:after{
+    box-sizing: border-box;
+}
+body{
+    background: grey;
+}
+h1{
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+div{
+    width: 20rem;
+    height: 20rem;
+    margin: 3rem 30rem;
+    background: maroon;
+    transition: 0.3s ease;
+}
+section{
+    button{
+        margin: 10rem 38rem;
+        padding: 1rem 1rem;
+        background: rgb(80, 167, 138);
+        color: white;
+    }
+}
+.rotate{   
+    button{
+        &:hover+div{
+            background: rgb(211, 34, 211);
+            transform: rotate(45deg);
+            transform-origin: top right;
+        }
+    }
+}
+.skew{
+    button{
+        &:hover+div{
+            background: aquamarine;
+            transform: skewx(45deg);
+        }
+    }
+}
+.scale{
+    button{
+        &:hover+div{
+            transform: scalex(4.6); /* transform: scale(4.6,8.6); */
+            background: rgb(5, 165, 177);
+            opacity: 0;
+        }
+    }
+}
+.translate{
+    button{
+        &:hover+div{
+            /* transform-origin: top right; */
+            transform: translatey(-5rem);
+            background: rgb(5, 165, 177);
+            opacity: 0;
+        }
+    }
+}
+
+/* SELECTORES COMBINADOS
+space -> descendiente
+> -> hijo
++ -> hermano adyacente
+~ -> hermano posterior
+*/
