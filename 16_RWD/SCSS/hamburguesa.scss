@@ -9,11 +9,11 @@ header{
         justify-content: space-between;
     }
     .menu{
-        display: none;
+        display: none; 
     } 
     ul{
         list-style: none;
-        width: 75%;
+        width: 100%;
         display: flex;
     }
     li{
@@ -28,7 +28,7 @@ header{
     }
     .hamburguesa{
         font-size: 3rem;
-        width: 25%;
+        width: 100%;
         &:hover ul .menu{
             display: block;
         }
@@ -36,9 +36,14 @@ header{
     }
 }
 
-@media screen and (min-width: 480px){
-     .menu{
-        display: flex;
+@media screen and (min-width: 780px){
+    header{
+        .menu{
+            display: flex;
+        }
+    }
+    .hamburguesa{
+        display: none;
     }
     
 }

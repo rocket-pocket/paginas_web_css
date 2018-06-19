@@ -5,14 +5,19 @@ h1{
     opacity: 1;
     position: relative;
 
+    /*TRANSITIONS */
      /* transition-property:font-size;
     transition-duration: 0.6s;
     transition-timing-function: cubic-bezier(.29,1.52,.03,-0.65); 
-    transition-delay: 1s;*/
+    transition-delay: 1s;*//* RETARDO */
     transition:all 0.3s linear;
     &:hover{
         color: rgb(2, 199, 206);
-        font-size: 3rem;
+        font-size: 4rem;
         opacity: 0;
+        
     }
+
+    /* TRANSFORM */
+    
 }
