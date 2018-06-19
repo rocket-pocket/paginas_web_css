@@ -70,11 +70,14 @@ nav {
         text-decoration: none;
         padding: 0.2rem 2rem;
         display: block;
+        transition: all 0.2s linear;
+        &:hover{
+            color: white;
+            background: brown;
+            color: aliceblue;
+            transform: scale(1.6);
+        }
     }
-    a:hover {
-        color: aliceblue;
-        background-color: brown
-    } 
     >ul {
         >li {
             display: inline-block;
