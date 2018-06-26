@@ -236,9 +236,46 @@ p {
 }
 .economi .euro {
   width: 30%;
+  position: relative;
+  left: 5%;
+  transition: 0.2s ease;
+}
+.economi .euro:hover {
+  transform: scale(1.6);
 }
 .economi .euro img {
   width: 100%;
+  animation: euro 3s linear infinite;
+}
+@keyframes euro {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.economi .franco {
+  width: 30%;
+  position: relative;
+  bottom: 3rem;
+  left: 15%;
+  transition: 0.2s ease;
+}
+.economi .franco:hover {
+  transform: scale(1.6);
+}
+.economi .franco img {
+  width: 100%;
+  animation: franco 3s linear infinite;
+}
+@keyframes franco {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 footer {
