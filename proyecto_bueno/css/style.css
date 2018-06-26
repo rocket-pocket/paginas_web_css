@@ -46,10 +46,6 @@ table {
   border-spacing: 0;
 }
 
-body {
-  height: 5000px;
-}
-
 header {
   width: 100%;
   height: 100vh;
@@ -91,109 +87,115 @@ header h1 {
   padding-top: 25%;
 }
 
-.container {
-  /* MEDIA QUERIS */
+p {
+  font-family: "hind";
 }
-.container .contenedor {
+
+.container {
   width: 100%;
 }
-.container .contenedor section {
+.container section {
   width: 90%;
   margin-top: 5rem;
   margin-left: auto;
   margin-right: auto;
   background: white;
 }
-.container .contenedor h2 {
+.container h2 {
   font-family: "damion";
   font-size: 3rem;
   color: #063879;
 }
-.container .contenedor p {
+.container p {
   margin-top: 1rem;
 }
-.container .imagen {
+
+.imagen {
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 100%;
   overflow: hidden;
 }
-.container .imagen img {
+.imagen img {
   width: 100%;
   transition: 1s ease;
 }
-.container .imagen img:hover {
+.imagen img:hover {
   transform: scale(1.5);
 }
-.container .geo h3 {
+
+.geo h3 {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-family: "hind";
   font-size: 1.5rem;
   text-align: center;
 }
-.container .geo a {
+.geo a {
   color: tomato;
   font-size: 1.02rem;
 }
-.container .geo .bio {
+.geo .bio {
   width: 100%;
   background-color: #6fbbee;
   padding: 1rem;
   margin-top: 2rem;
 }
-.container .geo .bio p {
+.geo .bio p {
   background: #fff;
   border-radius: 3%;
   padding: 0.5rem 0.5rem 1rem 0.5rem;
 }
-.container .geo .wrapper {
+.geo .wrapper {
   width: 100%;
   margin-top: 2rem;
 }
-.container .geo .wrapper .fotos {
+.geo .wrapper .fotos {
   width: 100%;
-  height: 13rem;
+  height: 15rem;
   overflow: hidden;
 }
-.container .geo .wrapper .cuadro {
+.geo .wrapper .cuadro {
+  width: 100%;
+  height: auto;
   display: block;
   background-size: cover;
   transition: all 0.4s ease;
 }
-.container .geo .wrapper .cuadro:hover {
+.geo .wrapper .cuadro:hover {
   transform: scale(1.6) rotate(-10deg);
   background-color: transparent;
 }
-.container .geo .wrapper .mapafr {
+.geo .wrapper .mapafr {
   background-image: url("../assets/Mapa-de-Departamentos_y_regiones_de_Francia_es-1024x958.png");
   width: 100%;
   height: 100%;
   background-color: #070791;
   background-blend-mode: multiply;
 }
-.container .geo .wrapper .lake {
+.geo .wrapper .lake {
   background-image: url("../assets/France_Mountains_Lake_440304.jpg");
   width: 100%;
   height: 100%;
   background-color: #070791;
   background-blend-mode: multiply;
 }
-.container .geo .wrapper .burdeos {
+.geo .wrapper .burdeos {
   background-image: url("../assets/mejor-zona-para-alojarse-en-burdeos.jpg");
   width: 100%;
   height: 100%;
   background-color: #070791;
   background-blend-mode: multiply;
 }
-.container .geo .wrapper .corcega {
+.geo .wrapper .corcega {
   background-image: url("../assets/rondinara.jpg");
   width: 100%;
   height: 100%;
   background-color: #070791;
   background-blend-mode: multiply;
 }
-.container .container2 {
+
+.container2 {
   background-image: url("../assets/la-torre-eiffel_3ddb59de.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -204,54 +206,53 @@ header h1 {
   padding: 1rem;
   margin-top: 3rem;
 }
-.container .container2 h2 {
+.container2 h2 {
   font-family: "damion";
   font-size: 3rem;
   color: black;
   margin-bottom: 2rem;
 }
-.container .container2 p {
+.container2 p {
   padding: 0.5rem;
   background: rgba(3, 116, 145, 0.6);
   border-radius: 3%;
   color: white;
 }
-.container .ini .wrapper {
-  margin-top: 3rem;
+
+.economi {
   width: 100%;
-  text-align: center;
+  padding: 1rem;
+  background: #000;
+  margin-bottom: 0;
 }
-.container .ini .imagen {
-  width: 100%;
-  margin-top: 3rem;
-}
-.container .ini .imagen img {
-  width: 100%;
-}
-.container .ini table {
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  height: 8rem;
-}
-.container .ini tr {
-  border: 1px solid black;
-}
-.container .ini th {
-  border: 1px solid black;
-}
-.container .geo .chamonix {
-  width: 100%;
-  background-image: url("../assets/chamonix-mont-blanc--1418045-11.jpg");
-  background-size: 100%;
-  background-color: #196ecf;
-  background-blend-mode: multiply;
-  height: 12rem;
-}
-.container .geo .chamonix h2 {
+.economi h2 {
+  font-family: "damion";
+  font-size: 3rem;
   color: white;
-  padding: 5.5rem;
-  text-align: center;
+  margin-bottom: 2rem;
 }
+.economi p {
+  color: white;
+}
+.economi .euro {
+  width: 30%;
+}
+.economi .euro img {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  background: blue;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+}
+footer p {
+  /* padding-top: 4vh; */
+}
+
+/* MEDIA QUERIS */
 
 /*# sourceMappingURL=css/style.css.map */
