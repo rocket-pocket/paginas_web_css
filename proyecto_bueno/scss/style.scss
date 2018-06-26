@@ -73,11 +73,11 @@ p{
         color: $colorH2;
     }
     p{
-        margin-top: 1rem;
-        
+        margin-top: 1rem;        
     }
+ 
+   
 }
-
 .imagen{
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -252,14 +252,26 @@ p{
         }
     }
 }
-
-
-
-
+.video{
+    background: rgb(95, 2, 67);
+    margin-top: 0;
+    width: 100%;
+    height: 80vh;
+    h3{
+        color: #fff;
+        font-family: $fuente_corridos;
+        font-size: $fuenteH3;
+        margin-top: 0;
+        margin-bottom: 2rem;
+        position: relative;
+        top: -0.5rem;
+        text-align: center;
+    }
+}
 footer{
     width: 100%;
-    height: 10vh;
-    background: blue;
+    height: 20vh;
+    background: rgb(3, 79, 122);
     text-align: center;
     position: relative;
     bottom: 0;
@@ -267,6 +279,46 @@ footer{
     
     p{
         /* padding-top: 4vh; */
+        color: white;
+    }
+    nav{
+        width: 100%;
+    }
+    ul{
+       width:70%;
+       display: flex;
+       padding: 1rem 0;
+       margin-top: 0;
+       margin-left: 1rem;
+       
+       
+    }
+    li{
+        width: 100%;
+        padding: 1rem 0.2rem;
+    }
+    a{
+        color: #fff;
+        font-family: 'hind';
+        font-size: 0.7rem;
+        position: relative;
+        &:hover::after{
+            opacity: 1;
+            width: 100%;
+
+
+        }
+        &::after{
+            content: "";
+            width: 0;
+            height: 1px;
+            background: white;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            opacity: 0;
+            transition: 0.3s linear;
+        }
     }
 }
 
