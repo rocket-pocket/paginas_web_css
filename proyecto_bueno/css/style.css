@@ -294,6 +294,28 @@ p {
   top: -0.5rem;
   text-align: center;
 }
+.video button {
+  width: 5rem;
+  height: 3rem;
+  background: #80c6ee;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 4%;
+  margin-top: 2rem;
+  margin-left: 10%;
+  transition: 0.3s ease;
+}
+.video button:hover {
+  transform: scale(1.2);
+}
+.video .wiki {
+  width: 30%;
+  position: relative;
+  bottom: 4rem;
+  left: 55%;
+  color: white;
+}
 
 footer {
   width: 100%;

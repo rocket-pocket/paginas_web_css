@@ -267,6 +267,29 @@ p{
         top: -0.5rem;
         text-align: center;
     }
+    button{
+        width: 5rem;
+        height: 3rem;
+        background: rgb(128, 198, 238);
+        cursor: pointer;
+        border: none;
+        color: white;
+        border-radius: 4%;
+        margin-top: 2rem;
+        margin-left: 10%;
+        transition: 0.3s ease;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    .wiki{
+        width: 30%;
+        position: relative;
+        bottom: 4rem;
+        left: 55%;
+        color: white;
+
+    }
 }
 footer{
     width: 100%;
