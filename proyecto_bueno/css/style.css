@@ -386,13 +386,16 @@ footer p {
 }
 footer nav {
   width: 100%;
+  display: flex;
 }
 footer ul {
   width: 70%;
   display: flex;
-  padding: 1rem 0;
+  justify-content: center;
   margin-top: 0;
-  margin-left: 1rem;
+  padding-left: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 footer li {
   width: 100%;
@@ -421,11 +424,5 @@ footer a::after {
 }
 
 /* MEDIA QUERIS */
-@media screen and (min-width: 251px) {
-  footer ul {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 
 /*# sourceMappingURL=css/style.css.map */
