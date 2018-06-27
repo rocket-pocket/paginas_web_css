@@ -1,4 +1,4 @@
-@import 'reset.scss';
+@import '_reset.scss';
 
 $fuente_titulos: 'damion';
 $fuente_corridos: 'hind';
@@ -57,6 +57,7 @@ header{
         position: absolute;
         top: 15rem;
         animation: nubiz 0.4s ease;
+        border: 1px solid black;
     }
     @keyframes nubiz{
         0%{
@@ -73,6 +74,7 @@ header{
         background-size: contain;
         background-repeat: no-repeat;
         overflow: hidden;
+       
         
         
     }
@@ -94,7 +96,9 @@ header{
         background-size: contain;
         background-repeat: no-repeat;
         animation: nubde 0.5s ease;
-        position: relative;
+        position: absolute;
+        right: 0;
+        
         
     }
     @keyframes nubde{
@@ -105,13 +109,13 @@ header{
             right: 0;
         }
     }
-    .notre{
+    /* .notre{
         width: 100%;
         height: 5rem;
         background-image: url("../assets/images.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-    }
+    } */
    
 }
 p{
@@ -234,7 +238,7 @@ p{
     background-image: url("../assets/la-torre-eiffel_3ddb59de.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left;
+    background-position: center;
     background-color: rgb(7, 7, 7);
     background-blend-mode: lighten;
     width: 100%;
@@ -292,7 +296,7 @@ p{
     }
     .franco{
         width: 30%;
-        position: relative;
+        position: relative; /* CREO QUE AQUI DESBORDA POR LA DERECHA */
         bottom: 3rem;
         left: 15%;
         transition: 0.2s ease;
@@ -327,7 +331,13 @@ p{
         padding-top: 1rem; 
         text-align: center;
     }
+    .vid{
+        width: 100%;
+        height: 30vh;
+    }
     iframe{
+        width: 100%;
+        height: 100%;
         margin: 0 auto;
     }
     .wrapper{
@@ -350,11 +360,18 @@ p{
     }
     .wiki{
         width: 30%;
+        margin-right: 0;
         position: relative;
         bottom: 4rem;
         left: 55%;
         color: white;
+        text-align: center;
+        border: 1px solid black;
 
+    }
+    p{
+        width: 100%;
+        border: 1px solid red;
     }
 }
 footer{
@@ -373,13 +390,16 @@ footer{
     }
     nav{
         width: 100%;
+        display: flex;
+        
     }
     ul{
        width:70%;
        display: flex;
-       padding: 1rem 0;
        margin-top: 0;
-       margin-left: 1rem;
+       justify-content: center;
+       padding-left: 0;
+       
        
        
     }
@@ -413,17 +433,7 @@ footer{
 }
 
 
-
-/* MEDIA QUERIS */
-
-@media screen and (min-width:251px){
-    footer{
-        ul{
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-}
+@import '_mediaqueris.scss'
 
 
 
