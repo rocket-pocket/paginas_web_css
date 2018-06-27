@@ -1,0 +1,253 @@
+@import '_reset.scss';
+
+$fuente_titulos: 'damion';
+$fuente_corridos: 'hind';
+$funenteH2: 3rem;
+$fuenteH3: 1.5rem;
+$colorH2: rgb(6, 56, 121);
+
+
+p{
+    font-family: 'hind';
+    padding: 0 1rem;
+}
+h2{
+    padding: 0 1rem;
+}
+section{
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/Fondo_2.png");
+    background-size:cover;
+    background-position: bottom;
+    
+    .mobile_menu{
+        padding-top: 1rem;
+        width: 3rem;
+        height: 3rem;        
+        position: absolute;
+        right: 1rem;
+        top: 0;
+        a{
+            font-size: 3rem;
+            color: white;
+        }
+    }
+    .logo{
+        width: 3rem;
+        height: 2.5rem;
+        position: relative;
+        top: 1rem;
+        left: 1rem;
+        img{
+            width: 100%;
+        }
+    }
+    ul{
+        display: none;
+    }
+    h1{
+        text-align: center;
+        font-size: 4rem;
+        font-family: $fuente_titulos;
+        color: white;
+        padding-top: 30vh;  
+
+    }
+    .nube1{
+        width: 40%;
+        height: 20vh;
+        position: absolute;
+        top: 20vh;
+        animation: nubiz 0.8s ease;
+    }
+    @keyframes nubiz{
+        0%{
+            left: -20%
+        }
+        100%{
+            left: 0%;
+        }
+    }
+    .nubiz{
+        background-image: url("../assets/nubeIz.png");
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        overflow: hidden; 
+        
+    }
+    .nube2{
+        width: 30vw;
+        height: 15vh;
+        position: absolute;
+        top: 28vh;
+        right: 0;
+        overflow: hidden;      
+    }   
+    .nubde{
+        background-image: url("../assets/nubede.png");
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation: nubde 0.7s ease;
+        position: relative;       
+    }
+    @keyframes nubde{
+        0%{
+            right: -15rem
+        }
+        100%{
+            right: 0;
+        }
+    } 
+   
+}
+.container{
+    width: 100%;
+    .wrapper{
+        width: 100%;
+        display: flex;
+    }
+    .ini{
+        background: linear-gradient(180deg, rgba(255,255,255, 50%), rgba(2, 40, 121,15%), rgba(201, 0, 0, 30%));
+    }
+    h2{
+        font-family: $fuente_titulos;
+        font-size: $funenteH2;
+        color: $colorH2;
+    }
+    p{
+        margin-top: 1rem;        
+    }   
+}
+.imagen_ini{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 90%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 750px;
+    img{
+        width: 100%;
+        transition: 1s ease;
+        &:hover{
+            transform: scale(1.3);
+        }
+        
+
+    }
+}
+.geo{
+    margin-top: 0;
+    background: linear-gradient(180deg,rgba(201, 0, 0, 30%), rgba(216, 96, 96, 10%), rgba(255,255,255, 50%));
+    h2{
+        margin-top: 0;
+        padding-top: 2rem;
+    }
+    .hoja{
+        width: 4rem;
+        height: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+        i{
+            font-size: 3rem;
+            color: rgb(103, 212, 167);
+        }
+    }
+    h3{
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-family: $fuente_corridos;
+        font-size: $fuenteH3;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    a{
+        color: tomato;
+        font-size: 1.02rem;
+    }
+    .bio{
+        width: 100%;
+        padding: 1rem;
+        margin-top: 2rem;
+        p{
+            border-radius: 3%;
+            padding: 0.5rem 0.5rem 1rem 0.5rem;
+            
+        }
+    }    
+}
+.wrapper{
+    flex: 0 1 20%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;/* ARREGLAR */
+    flex-wrap: wrap;
+    .fotos{
+        width: 100%;
+        height: 15rem;
+        overflow: hidden;
+    }
+    
+    .cuadro{
+        width: 100%;
+        height: auto;
+        display: block;
+        background-size: cover;
+        transition: all 0.4s ease;
+        &:hover{
+            transform: scale(1.6) rotate(-10deg);
+            background-color: transparent;
+        }
+    }
+    .mapafr{
+        background-image:url("../assets/Mapa-de-Departamentos_y_regiones_de_Francia_es-1024x958.png");
+        width: 100%;
+        height: 100%;
+        background-color: rgb(7, 7, 145);
+        background-blend-mode: multiply;
+    }
+    .lake{
+        background-image:url("../assets/France_Mountains_Lake_440304.jpg");
+        width: 100%;
+        height: 100%;
+        background-color: rgb(7, 7, 145);
+        background-blend-mode: multiply;
+    }
+    .burdeos{
+        background-image:url("../assets/mejor-zona-para-alojarse-en-burdeos.jpg");
+        width: 100%;
+        height: 100%; 
+        background-color: rgb(7, 7, 145);
+        background-blend-mode: multiply;
+    }
+    .corcega{
+        background-image:url("../assets/rondinara.jpg");
+        width: 100%;
+        height: 100%;
+        background-color: rgb(7, 7, 145);
+        background-blend-mode: multiply;
+    }
+}
+
+        
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIS */
+@import '_queris';

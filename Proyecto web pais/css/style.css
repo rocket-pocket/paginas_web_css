@@ -1,0 +1,272 @@
+*,
+*::before, *::after,
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: "hind";
+  padding: 0 1rem;
+}
+
+h2 {
+  padding: 0 1rem;
+}
+
+section {
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/Fondo_2.png");
+  background-size: cover;
+  background-position: bottom;
+}
+header .mobile_menu {
+  padding-top: 1rem;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+}
+header .mobile_menu a {
+  font-size: 3rem;
+  color: white;
+}
+header .logo {
+  width: 3rem;
+  height: 2.5rem;
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+}
+header .logo img {
+  width: 100%;
+}
+header ul {
+  display: none;
+}
+header h1 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "damion";
+  color: white;
+  padding-top: 30vh;
+}
+header .nube1 {
+  width: 40%;
+  height: 20vh;
+  position: absolute;
+  top: 20vh;
+  animation: nubiz 0.8s ease;
+}
+@keyframes nubiz {
+  0% {
+    left: -20%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+header .nubiz {
+  background-image: url("../assets/nubeIz.png");
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+header .nube2 {
+  width: 30vw;
+  height: 15vh;
+  position: absolute;
+  top: 28vh;
+  right: 0;
+  overflow: hidden;
+}
+header .nubde {
+  background-image: url("../assets/nubede.png");
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: nubde 0.7s ease;
+  position: relative;
+}
+@keyframes nubde {
+  0% {
+    right: -15rem;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+.container {
+  width: 100%;
+}
+.container .wrapper {
+  width: 100%;
+  display: flex;
+}
+.container .ini {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(2, 40, 121, 0.15), rgba(201, 0, 0, 0.3));
+}
+.container h2 {
+  font-family: "damion";
+  font-size: 3rem;
+  color: #063879;
+}
+.container p {
+  margin-top: 1rem;
+}
+
+.imagen_ini {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 90%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 750px;
+}
+.imagen_ini img {
+  width: 100%;
+  transition: 1s ease;
+}
+.imagen_ini img:hover {
+  transform: scale(1.3);
+}
+
+.geo {
+  margin-top: 0;
+  background: linear-gradient(180deg, rgba(201, 0, 0, 0.3), rgba(216, 96, 96, 0.1), rgba(255, 255, 255, 0.5));
+}
+.geo h2 {
+  margin-top: 0;
+  padding-top: 2rem;
+}
+.geo .hoja {
+  width: 4rem;
+  height: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.geo .hoja i {
+  font-size: 3rem;
+  color: #67d4a7;
+}
+.geo h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: "hind";
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.geo a {
+  color: tomato;
+  font-size: 1.02rem;
+}
+.geo .bio {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.geo .bio p {
+  border-radius: 3%;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+}
+
+.wrapper {
+  flex: 0 1 20%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  /* ARREGLAR */
+  flex-wrap: wrap;
+}
+.wrapper .fotos {
+  width: 100%;
+  height: 15rem;
+  overflow: hidden;
+}
+.wrapper .cuadro {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-size: cover;
+  transition: all 0.4s ease;
+}
+.wrapper .cuadro:hover {
+  transform: scale(1.6) rotate(-10deg);
+  background-color: transparent;
+}
+.wrapper .mapafr {
+  background-image: url("../assets/Mapa-de-Departamentos_y_regiones_de_Francia_es-1024x958.png");
+  width: 100%;
+  height: 100%;
+  background-color: #070791;
+  background-blend-mode: multiply;
+}
+.wrapper .lake {
+  background-image: url("../assets/France_Mountains_Lake_440304.jpg");
+  width: 100%;
+  height: 100%;
+  background-color: #070791;
+  background-blend-mode: multiply;
+}
+.wrapper .burdeos {
+  background-image: url("../assets/mejor-zona-para-alojarse-en-burdeos.jpg");
+  width: 100%;
+  height: 100%;
+  background-color: #070791;
+  background-blend-mode: multiply;
+}
+.wrapper .corcega {
+  background-image: url("../assets/rondinara.jpg");
+  width: 100%;
+  height: 100%;
+  background-color: #070791;
+  background-blend-mode: multiply;
+}
+
+/* MEDIA QUERIS */
+@media screen and (min-width: 380px) {
+  .nube1 {
+    left: 12%;
+  }
+
+  @keyframes nubiz {
+    0% {
+      left: -20%;
+    }
+    100% {
+      left: 12%;
+    }
+  }
+}
+
+/*# sourceMappingURL=css/style.css.map */

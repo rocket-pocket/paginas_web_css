@@ -1,0 +1,13 @@
+@media screen and (min-width: 380px){
+    .nube1{
+        left: 12%;
+    }
+    @keyframes nubiz{
+        0%{
+            left: -20%
+        }
+        100%{
+            left: 12%;
+        }
+    }
+}
