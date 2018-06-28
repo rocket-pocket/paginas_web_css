@@ -133,7 +133,7 @@ header .nubde {
   margin-top: 0;
 }
 .container .ini {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(2, 40, 121, 0.15), rgba(201, 0, 0, 0.3), rgba(255, 255, 255, 0.5));
+  background: #fbf3c5;
 }
 .container h2 {
   font-family: "damion";
@@ -172,6 +172,14 @@ header .nubde {
 }
 .geo p {
   color: white;
+}
+.geo .foto_geo {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.geo .foto_geo img {
+  width: 100%;
 }
 .geo .hoja {
   width: 4rem;
@@ -250,6 +258,34 @@ header .nubde {
 }
 .wrapper2 .corcega {
   background-image: url("../assets/rondinara.jpg");
+  width: 100%;
+  height: 100%;
+  background-color: #070791;
+  background-blend-mode: multiply;
+}
+.wrapper2 .cereales {
+  background-image: url("../assets/800px-Beauce_3.jpg");
+  width: 100%;
+  height: 100%;
+  background-color: #070791;
+  background-blend-mode: multiply;
+}
+.wrapper2 .lavanda {
+  background-image: url("../assets/biodi.jpg");
+  width: 100%;
+  height: 100%;
+  background-color: #070791;
+  background-blend-mode: multiply;
+}
+.wrapper2 .torre1 {
+  background-image: url("../assets/City-of-Paris-France-Eiffel-Tower_1920x1080.jpg");
+  width: 100%;
+  height: 100%;
+  background-color: #070791;
+  background-blend-mode: multiply;
+}
+.wrapper2 .torre2 {
+  background-image: url("../assets/la-torre-eiffel_3ddb59de.jpg");
   width: 100%;
   height: 100%;
   background-color: #070791;
