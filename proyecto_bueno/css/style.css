@@ -91,6 +91,10 @@ header h1 {
   font-size: 4rem;
   font-family: "damion";
   color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 header .nube1 {
   width: 40%;
